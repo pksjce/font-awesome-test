@@ -1,0 +1,24 @@
+{
+  "name": "font-awesome-test",
+  "version": "1.0.0",
+  "description": "",
+  "author": "pksjce",
+  "license": "ISC",
+  "scripts": {
+    "dev": "webpack -d",
+    "dist": "webpack -p"
+  },
+  "dependencies": {
+    "font-awesome": "^4.3.0",
+    "font-awesome-loader": "^1.0.2",
+    "sass-loader": "^6.0.1",
+    "webpack": "^1.5.3"
+  },
+  "devDependencies": {
+    "css-loader": "^0.9.1",
+    "file-loader": "^0.8.1",
+    "style-loader": "^0.8.3",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.5.3"
+  }
+}
