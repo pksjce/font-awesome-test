@@ -9,8 +9,8 @@ module.exports = {
   plugins: [new ExtractTextPlugin('bundle.css')],
   module: {
     loaders: [{
-      test: /\.css$/,
-      loader: 'style-loader!css-loader?sourceMap'
+      test: /\.s?css$/,
+      loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!sass-loader?sourceMap' })
     }, {
       test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
       loader: "url-loader?limit=10000&mimetype=application/font-woff"
